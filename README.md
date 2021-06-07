@@ -7,10 +7,10 @@ Process_image node: subscribe to image published through camera and use the feed
 
 ### How to launch the simulation
 Launch the simulation environment using 
-  $ roslaunch my_robot world.launch 
+```$ roslaunch my_robot world.launch``` 
 
 To interact with the robot
-  $ roslaunch ball_chaser ball_chaser.launch
+```$ roslaunch ball_chaser ball_chaser.launch```
 
 Move the white ball in the gazebo and see the action performed by the robot.
 
