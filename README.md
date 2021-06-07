@@ -18,7 +18,7 @@ $ roslaunch ball_chaser ball_chaser.launch
 
 Move the white ball in the gazebo and see the action performed by the robot.
 
-### Rviz Setting
+### Rviz Interface
 ![](https://github.com/angcx1997/GoChaseIt/blob/main/img/Rviz_setting.png)
 
 ### Simulation Interface
