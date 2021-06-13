@@ -11,23 +11,29 @@
         <!-- Overall Filter Parameter -->
         <param name="initial_pose_x" value="15"/>
         <param name="initial_pose_y" value="15"/>
-        <param name="min_particles" value="100"/>
+        <param name="min_particles" value="500"/>
         <param name="max_particles" value="5000"/>
-        <param name="update_min_d" value="0.2"/>
-        <param name="update_min_a" value="0.5236"/>
+        <param name="update_min_d" value="0.1"/>
+        <param name="update_min_a" value="0.2"/>
 
         <!--  Laser Model Parameters -->
         <param name="laser_min_range" value="-1.0"/>
         <param name="laser_max_range" value="-1.0"/>
-        <param name="laser_max_beams" value="30"/>
+        <param name="laser_max_beams" value="60"/>
         <param name="laser_z_hit" value="0.95"/>
-        <param name="laser_z_rand" value="0.1"/>
+        <param name="laser_z_rand" value="0.05"/>
         
         <!-- Odometry Model Parameters -->
         <param name="odom_model_type" value="diff-corrected"/>
         <param name="odom_frame_id" value="odom"/>
         <param name="base_frame_id" value="robot_footprint"/>
         <param name="global_frame_id" value="map"/>
+        <param name="odom_alpha1" value="0.005"/>
+        <param name="odom_alpha2" value="0.005"/>
+        <param name="odom_alpha3" value="0.005"/>
+        <param name="odom_alpha4" value="0.005"/>
+        
+
     </node>
 
     <!-- Move Base -->
