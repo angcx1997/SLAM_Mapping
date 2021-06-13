@@ -1,25 +1,28 @@
-# GoChaseIt
-The mobile robot would try to get to the white ball after it being detected through the camera on-board. 
+# ROS AMCL Localisation
+The mobile robot able to localise itself in the simulation world through AMCL.
 
-Ball_chaser node: will run at cmd_vel whenvever client call for services.
+### Installation
+If you are working with a native ROS installation or using a VM, some of the following package might need to be installed. You could install them as shown below:
+```
+$ sudo apt-get install ros-melodic-navigation
+$ sudo apt-get install ros-melodic-map-server
+$ sudo apt-get install ros-melodic-move-base
+$ sudo apt-get install ros-melodic-amcl
+```
 
-Process_image node: subscribe to image published through camera and use the feed to detect presence of white ball. Whenever white ball is detected, the node will call for service at ball_chaser to output appropriate cmd_vel to chase the ball.
-
-### How to launch the simulation
+### Launching
 Launch the simulation environment using 
 ```
 $ roslaunch my_robot world.launch
 ``` 
 
-To interact with the robot
+Launch the amcl(including import map file, move_base, amcl)  
 ```
-$ roslaunch ball_chaser ball_chaser.launch
+$ roslaunch my_robot amcl.launch
 ```
-
-Move the white ball in the gazebo and see the action performed by the robot.
+### Testing
+- Send `navigation goal` via RViz
+- Send move command via `teleop` package
 
 ### Rviz Interface
-![](https://github.com/angcx1997/GoChaseIt/blob/main/img/Rviz_setting.png)
-
-### Simulation Interface
-![](https://github.com/angcx1997/GoChaseIt/blob/main/img/gazebo.png)
+![](https://github.com/angcx1997/WhereAmI/tree/main/img)
