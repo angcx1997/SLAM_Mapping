@@ -25,4 +25,4 @@ $ roslaunch my_robot amcl.launch
 - Send move command via `teleop` package
 
 ### Rviz Interface
-![](https://github.com/angcx1997/WhereAmI/tree/main/img)
+![](https://github.com/angcx1997/WhereAmI/blob/main/img/localisation.png)
