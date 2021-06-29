@@ -22,8 +22,11 @@ Launch the rtabmap
 $ roslaunch my_robot mapping.launch
 ```
 
+Following link is to download the done rtabmap for the project.
+https://drive.google.com/file/d/19eS9OiWTFZXoXW1baQO1HEGt7gHEA77x/view?usp=sharing
 
-Provided mapping is done, and you would like to use rtab_map to perform localization.
+
+Provided you have downloaded above link and put it inside `/my_robot` and you could use it to perform localization.
 ```
 $ roslaunch my_robot localization.launch
 ```
