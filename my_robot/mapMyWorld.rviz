@@ -78,6 +78,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         chassis:
           Alpha: 1
           Show Axes: false
@@ -153,6 +157,81 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rtabmap_ros/MapCloud
+      Cloud decimation: 4
+      Cloud from scan: false
+      Cloud max depth (m): 4
+      Cloud min depth (m): 0
+      Cloud voxel size (m): 0.009999999776482582
+      Color: 255; 255; 255
+      Color Transformer: ""
+      Download graph: false
+      Download map: false
+      Enabled: true
+      Filter ceiling (m): 0
+      Filter floor (m): 0
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: MapCloud
+      Node filtering angle (degrees): 30
+      Node filtering radius (m): 0
+      Position Transformer: ""
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: ""
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: rtabmap_ros/MapGraph
+      Enabled: true
+      Global loop closure: 255; 0; 0
+      Landmark: 0; 128; 0
+      Local loop closure: 255; 255; 0
+      Merged neighbor: 255; 170; 0
+      Name: MapGraph
+      Neighbor: 0; 0; 255
+      Topic: ""
+      Unreliable: false
+      User: 255; 0; 0
+      Value: true
+      Virtual: 255; 0; 255
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /rtabmap/global_path
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
