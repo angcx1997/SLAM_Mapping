@@ -1,4 +1,4 @@
-image: map.pgm
+image: rtabmap.pgm
 resolution: 0.01
 origin: [-0.0, -0.0, 0.0]
 occupied_thresh: 0.65
