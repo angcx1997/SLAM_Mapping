@@ -4,7 +4,8 @@ The mobile robot able to perform full slam with the help of rtabmap-ros.
 ### Installation
 If you are working with a native ROS installation or using a VM, some of the following package might need to be installed. You could install them as shown below:
 ```
-$ sudo apt install ros-melodic-rtabmap-ros
+$ sudo apt-get install ros-melodic-rtabmap-ros
+$ sudo apt-get install ros-melodic-teleop-twist-keyboard
 ```
 
 ### Launching
