@@ -16,6 +16,10 @@ Note:
 The simulation environment used in this project is much smaller and design specifically to allow fast convergence of rtab-map.
 Rtab-map use texture of the environment to detect the mapping location, therefore, for simulation purpose, the world is redesigned with different texture in each room and difference object is being place orderly in different room to avoid repetitive texture and object.
 
+To move the robot around
+```
+$ roslaunch teleop_twist_keyboard teleop.launch
+``` 
 
 Launch the rtabmap
 ```
